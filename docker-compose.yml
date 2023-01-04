@@ -55,6 +55,7 @@ services:
       NODE_ENV: ${NODE_ENV}
       AMQP_URL: "amqp://rabbitmq:5672"
       PORT: ${PORT}
+      REDIS_URL: "redis://cache:6379"
     ports:
       - ${PORT}:3000
     logging:
